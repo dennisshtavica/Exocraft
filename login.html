@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="/index.html" class="nav__logo">
+          <img src="/assets/images/logo.png" alt="" class="nav__logo-img" />
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav_item">
+              <a href="/index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#shop" class="nav__link">Shop</a>
+            </li>
+            <li class="nav__item">
+              <a href="#rules" class="nav__link">Rules</a>
+            </li>
+            <li class="nav__item">
+              <a href="#ranking" class="nav__link">Ranking</a>
+            </li>
+            <a href="/login.html" class="login">
+              <img src="/assets/images/LoginSignup.png" alt="" />
+            </a>
+            <div class="nav__link" onclick="myFunction()">
+              <img src="/assets/images/night-mode.png" id="icon" alt="" />
+            </div>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <img src="/assets/images/burger-bar.png" alt="" />
+          <!-- <i class='bx bx-menu'></i> -->
+        </div>
+      </nav>
+    </header>
+
+    <div class="obsidian">
+      <img src="/assets/images/obsidian.png" alt="" />
+    </div>
+
+    <main class="login-signup container grid login-section">
+      <div class="login-table">
+        <h1>Login?</h1>
+        <div class="login-form">
+          <form action="">
+            <input type="text" class="name" placeholder="Username" />
+            <input
+              type="password"
+              name=""
+              id=""
+              class="password"
+              placeholder="Password"
+            />
+          </form>
+        </div>
+        <button>Login</button>
+        <div class="paragraph-login">
+          <a href="">Dont have an account?</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Dark mode -->
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+    <!-- Scroll Reveal -->
+    <script src="/JS/scrollreveal.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="/JS/main.js"></script>
+  </body>
+</html>

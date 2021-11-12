@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exocraft</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/assets/images/favicon-32x32.png"
+    />
+    <!-- Boxicons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="/assets/images/logo.png" alt="" class="nav__logo-img" />
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav_item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#shop" class="nav__link">Shop</a>
+            </li>
+            <li class="nav__item">
+              <a href="#rules" class="nav__link">Rules</a>
+            </li>
+            <li class="nav__item">
+              <a href="#ranking" class="nav__link">Ranking</a>
+            </li>
+            <a href="/login.html" class="login">
+              <img src="/assets/images/LoginSignup.png" alt="" />
+            </a>
+            <div class="nav__link" onclick="myFunction()">
+              <img src="/assets/images/night-mode.png" id="icon" alt="" />
+            </div>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <img src="/assets/images/burger-bar.png" alt="" />
+          <!-- <i class='bx bx-menu'></i> -->
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Home -->
+      <section class="home container" id="home">
+        <div class="home__content grid">
+          <div class="home__group">
+            <img src="/assets/images/HomePic.png" alt="" class="home__img" />
+          </div>
+
+          <div class="home__data">
+            <h1 class="home__title">
+              Adventures are <br />
+              waiting for you
+            </h1>
+            <p class="home__description">
+              Discover huge worlds without any boundaries full of fun and
+              millions of friends
+            </p>
+            <div class="play-button">
+              <a href="">
+                <img src="/assets/images/play.png" alt="" />
+              </a>
+            </div>
+            <div class="players-online">
+              <img class="pickaxe" src="/assets/images/pickaxe.png" alt="" />
+              <p>Players Online 459</p>
+              <img class="fire" src="/assets/images/fire.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Ranking -->
+    <section class="section container grid ranking" id="ranking">
+      <div class="ranking__content grid">
+        <div class="ranking-group">
+          <div class="octopus">
+            <img src="/assets/images/octopus.png" alt="" />
+          </div>
+          <div class="ranking-titles">
+            <h1 class="ranking-title">Become the best player now</h1>
+          </div>
+          <div class="ranking-button">
+            <h3>Ranking</h3>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stats-points">
+            <img src="/assets/images/zombie.png" alt="" />
+          </div>
+          <div class="first">
+            <p class="numbers-names" style="color: #fcff64">1.</p>
+            <p class="numbers-names" style="color: #fcff64">Zombie</p>
+            <p class="points">5146 points</p>
+          </div>
+          <div class="stats-points2">
+            <img src="/assets/images/penguin.png" alt="" />
+          </div>
+          <div class="first">
+            <p class="numbers-names" style="color: #e0c0ff">2.</p>
+            <p class="numbers-names" style="color: #e0c0ff">Penguin</p>
+            <p class="points">4146 points</p>
+          </div>
+          <div class="stats-points3">
+            <img src="/assets/images/dragon.png" alt="" />
+          </div>
+          <div class="first">
+            <p class="numbers-names" style="color: #93ffe5">3.</p>
+            <p class="numbers-names" style="color: #93ffe5">Dragon</p>
+            <p class="points">3146 points</p>
+          </div>
+          <div class="stats-points4">
+            <img src="/assets/images/hoodedBoy.png" alt="" />
+          </div>
+          <div class="first">
+            <p class="numbers-names others">4.</p>
+            <p class="numbers-names others">Hooded Boy</p>
+            <p class="points">2146 points</p>
+          </div>
+          <div class="stats-points5">
+            <img src="/assets/images/raichu.png" alt="" />
+          </div>
+          <div class="first">
+            <p class="numbers-names others">5.</p>
+            <p class="numbers-names others">Raichu</p>
+            <p class="points">1146 points</p>
+          </div>
+          <div class="stats-points6">
+            <img src="/assets/images/creeper.png" alt="" />
+          </div>
+          <div class="first">
+            <p class="numbers-names others">6.</p>
+            <p class="numbers-names others">Creeper</p>
+            <p class="points">1111 points</p>
+          </div>
+          <div class="stats-points7">
+            <img src="/assets/images/skeleton.png" alt="" />
+          </div>
+          <div class="first">
+            <p class="numbers-names others">7.</p>
+            <p class="numbers-names others">Skeleton</p>
+            <p class="points">421 points</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discount -->
+    <section class="section grid discount">
+      <div class="rectangle">
+        <div class="discount-title">
+          <h1>Big discounts are already here</h1>
+          <p>
+            Discover huge worlds without any boundaries full of fun and millions
+            of friends
+          </p>
+        </div>
+        <div class="enderman">
+          <img src="/assets/images/Enderman_BE.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div class="promo__container">
+      <div class="purchased container">
+        <h1>432K+</h1>
+        <p>Players have already purchased</p>
+      </div>
+
+      <div class="promo grid container">
+        <div class="item1">
+          <h4>Promocode</h4>
+        </div>
+
+        <div class="item2">
+          <h5 id="textArea">CDA-EW5-7WR-VEW2</h5>
+          <img src="/assets/images/copy (1).png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Shop -->
+    <section class="section grid container shop" id="shop">
+      <div class="item-a" id="content-item">
+        <h3>Turbo-Exp</h3>
+        <p class="paragraph__levels">
+          More level, more oppertunity to enchant something unique
+        </p>
+        <p class="price">25$</p>
+        <img src="/assets/images/potion.png" alt="" />
+      </div>
+      <div class="item-a">
+        <h3 style="color: #f1be28">Energy</h3>
+        <p class="paragraph__levels">
+          More level, more oppertunity to enchant something unique
+        </p>
+        <p class="price">25$</p>
+        <img src="/assets/images/energy.png" alt="" />
+      </div>
+      <div class="item-a">
+        <h3 style="color: #b490fe">Armor</h3>
+        <p class="paragraph__levels">
+          More level, more oppertunity to enchant something unique
+        </p>
+        <p class="price">25$</p>
+        <img src="/assets/images/armor.png" alt="" />
+      </div>
+      <div class="item-a">
+        <h3 style="color: #f7448c">Ultimate Armor</h3>
+        <p class="paragraph__levels">
+          More level, more oppertunity to enchant something unique
+        </p>
+        <p class="price">25$</p>
+        <img src="/assets/images/ultimateArmor.png" alt="" />
+      </div>
+      <div class="item-a">
+        <h3 style="color: #9d6e57">Barrel</h3>
+        <p class="paragraph__levels">
+          More level, more oppertunity to enchant something unique
+        </p>
+        <p class="price">25$</p>
+        <img src="/assets/images/barrel.png" alt="" />
+      </div>
+      <div class="item-a">
+        <h3 style="color: #28ecdf">Chest</h3>
+        <p class="paragraph__levels">
+          More level, more oppertunity to enchant something unique
+        </p>
+        <p class="price">25$</p>
+        <img src="/assets/images/chest.png" alt="" />
+      </div>
+    </section>
+
+    <section class="rating container section">
+      <div class="rating-players">
+        <h1>Rating of the best players</h1>
+      </div>
+      <div class="rating-desc">
+        <p>
+          Advanced. Get motivated. Come out in the tops of the best. Be number
+          one
+        </p>
+      </div>
+      <div class="rating-button">
+        <h3>Ranking</h3>
+      </div>
+      <div class="characters">
+        <img src="/assets/images/characters.png" alt="" />
+      </div>
+
+      <div class="rating-content1">
+        <h1>5000+</h1>
+        <p class="rating-paragraph">
+          Thats how many players are in our database
+        </p>
+      </div>
+      <div class="rating-content1">
+        <h1>10K</h1>
+        <p class="rating-paragraph">
+          Prizes were given to players for winning places in the ranking
+        </p>
+      </div>
+      <div class="rating-content1">
+        <h1 style="font-size: 2.5rem">AntiCheat</h1>
+        <p class="rating-paragraph">
+          We are for fair play, so our unique system will not allow us to turn
+          on cheats
+        </p>
+      </div>
+    </section>
+
+    <section class="select-ranking container">
+      <div class="heading">
+        <h1 style="font-size: 2rem">Select Ranking</h1>
+      </div>
+      <div class="select__buttons">
+        <a href="">Clan Points</a>
+      </div>
+      <div class="select__buttons">
+        <a href="">Top dug stone</a>
+      </div>
+      <div class="select__buttons">
+        <a href="">Opened barrels</a>
+      </div>
+      <div class="select__buttons">
+        <a href="">Excavated stone</a>
+      </div>
+    </section>
+
+    <footer class="section">
+      <div class="footer-content">
+        <img src="/assets/images/logo.png" alt="" />
+        <a class="footer-nav" href="">Home</a>
+        <a class="footer-nav" href="">Shop</a>
+        <a class="footer-nav" href="">Rules</a>
+        <a class="footer-nav" href="">Ranking</a>
+      </div>
+      <div class="socials">
+        <a href="">
+          <img src="/assets/images/facebook.png" alt="" />
+        </a>
+        <a href="">
+          <img src="/assets/images/instagram.png" alt="" />
+        </a>
+        <a href="">
+          <img src="/assets/images/youtube.png" alt="" />
+        </a>
+        <a href="">
+          <img src="/assets/images/twitter.png" alt="" />
+        </a>
+      </div>
+    </footer>
+    <!-- Dark mode -->
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+    <!-- Scroll Reveal -->
+    <script src="/JS/scrollreveal.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="/JS/main.js"></script>
+  </body>
+</html>
